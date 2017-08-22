@@ -3,9 +3,9 @@ define(function(require) {
   var termReg = /(Spring|Summer|Fall|Winter)\s+(\d{4})\s+\|\s+([a-zA-Z]+)\s+\|\s+(.+)/;
   var courseReg = /^([A-Z]{2,}\ \w{1,5})\ -\ (.+)$/;
   var compReg = "Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date";
-  var daysOfWeekReg = /^(Mo|M)?(Tu|T)?(We|W)?(Th)?(Fr|F)?(Sa)?(Su)?\s([\d\D]+)/
-  var rangeReg = /([\d\D]+)\s-\s([\d\D]+)/
-  var dayMap = {1:'MO',2:"TU",3:"WE",4:"TH",5:"FR",6:"SA",7:"SU"}
+  var daysOfWeekReg = /^(Su)?(Mo|M)?(Tu|T)?(We|W)?(Th)?(Fr|F)?(Sa)?\s([\d\D]+)/;
+  var rangeReg = /([\d\D]+)\s-\s([\d\D]+)/;
+  var dayMap = {0:"SU",1:'MO',2:"TU",3:"WE",4:"TH",5:"FR",6:"SA"};
 
   var convertTo24Hour = function(time12Hour) {
     var timeMatch = time12Hour.match(/(\d{1,2}):(\d{2})(AM|am|PM|pm)/);

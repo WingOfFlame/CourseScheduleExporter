@@ -3,7 +3,7 @@ define(function(require){
   var generate = function(courses){
     var calendarContent = "";
     function addLine(line){
-        calendarContent += line + '\n';
+        calendarContent += line + '\r\n';
     };
 
     addLine('BEGIN:VCALENDAR');
@@ -25,7 +25,6 @@ define(function(require){
         addLine('DTSTART:'+comp.DTSTART);
         addLine('RRULE:'+comp.RRULE);
         addLine('DTEND:'+comp.DTEND);
-        addLine('DTSTAMP:'+comp.DTSTAMP);
         addLine('LOCATION:'+comp.LOCATION);
         addLine('SUMMARY;LANGUAGE=en-us:'+comp.SUMMARY);
 
@@ -33,6 +32,7 @@ define(function(require){
         addLine('END:VEVENT');
       }
     }
+    addLine('END:VCALENDAR')
     return calendarContent;
   }
 

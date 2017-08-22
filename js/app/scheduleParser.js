@@ -64,6 +64,9 @@ define(function(require) {
             var timeRaw = lines[++i];
             var location = lines[++i].replace(/\s+/g, ' ');
             var instructor = lines[++i];
+            while(instructor.endsWith(', ')){
+              instructor = instructor.concat(lines[++i]);
+            }
             var dateRaw = lines[++i];
             var val = courses[courses.length - 1];
             val.components.push({
@@ -93,7 +96,7 @@ define(function(require) {
         for (var j = 0; j < components.length; j++) {
           var comp = components[j];
 
-          var daysMatch = comp.timeRaw.match(_util.daysOfWeekReg);
+          var daysMatch = comp.timeRaw.match(_util.daysOfWeekReg).slice(1,);
           var daysOfWeek = []
           for (index in daysMatch) {
             if (daysMatch[index] && _util.dayMap[index]) {
@@ -101,7 +104,7 @@ define(function(require) {
             }
           }
 
-          var timeMatch = daysMatch[8].match(_util.rangeReg);
+          var timeMatch = daysMatch[7].match(_util.rangeReg);
           var timeFrom = _util.convertTo24Hour(timeMatch[1]);
           var timeTo = _util.convertTo24Hour(timeMatch[2]);
 
@@ -110,14 +113,28 @@ define(function(require) {
           var dateFrom = dateMatch[1].split('/');
           var dateTo = dateMatch[2].split('/');
 
+          // Adjust starting date
+          var start = new Date(dateFrom)
+          var diff = 0;
+          for (index in daysMatch) {
+            if (daysMatch[index]){
+              var diff = index - start.getDay();
+              if(diff<0){
+                diff+=7;
+              }
+              break;
+            }
+          }
+          dateFrom[1] = parseInt(dateFrom[1])+diff
+
           // iCal fields
-          comp.DTSTART = dateFrom[2] + dateFrom[1] + dateFrom[0] + 'T' + timeFrom.hour + timeFrom.minute + '00';
-          comp.DTEND = dateFrom[2] + dateFrom[1] + dateFrom[0] + 'T' + timeTo.hour + timeTo.minute + '00';
-          var DUNTIL = dateTo[2] + dateTo[1] + dateTo[0] + 'T' + timeTo.hour + timeTo.minute + '00';
+          comp.DTSTART = dateFrom[2] + dateFrom[0] + dateFrom[1] + 'T' + timeFrom.hour + timeFrom.minute + '00';
+          comp.DTEND = dateFrom[2] + dateFrom[0] + dateFrom[1] + 'T' + timeTo.hour + timeTo.minute + '00';
+          var DUNTIL = dateTo[2] + dateTo[0] + dateTo[1] + 'T' + timeTo.hour + timeTo.minute + '00';
           comp.RRULE = "FREQ=WEEKLY;UNTIL=" + DUNTIL + ";WKST=SU;BYDAY=" + daysOfWeek.join();
           comp.LOCATION = comp.location;
           comp.SUMMARY = course.code + ' ' + comp.type + ' in ' + comp.location;
-          comp.DESCRIPTION = course.code + ' ' + comp.type + ' ' + comp.section + ": " + course.name + " in " + comp.location + " with " + comp.instructor;
+          comp.DESCRIPTION = course.name + " in " + comp.location + " with " + comp.instructor;
           components[j] = comp;
         }
         data[i].components = components;
