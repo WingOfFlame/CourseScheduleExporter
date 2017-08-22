@@ -1,0 +1,148 @@
+
+Search
+Plan
+Enroll
+My Academics
+ 	My Class Schedule	 	 	|	 	 	Add	 	 	|	 	 	Drop	 	 	|	 	 	Swap	 	 	|	 	 	Edit	 	 	|	 	 	Term Information	 
+My Class Schedule
+List View
+Weekly Calendar View
+Select Display Option
+L
+Fall 2017 | Graduate | Cornell University
+Group Box
+Collapse section Class Schedule Filter Options Class Schedule Filter Options 
+Show Enrolled Classes
+Show Dropped Classes
+Show Waitlisted Classes
+Filter
+CS 4410 - Operating Systems
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+3.00
+Graded
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+11634
+001
+Lecture
+TuTh 2:55PM - 4:10PM
+Uris Hall G01
+Anne Weinberger Bracy, 
+Emin G. Sirer
+08/22/2017 - 12/01/2017
+CS 5414 - Distr Comput Principles
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+4.00
+Graded
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+13098
+001
+Lecture
+MoWe 1:25PM - 2:40PM
+Olin Hall 255
+Lorenzo Alvisi
+08/22/2017 - 12/01/2017
+13099
+201
+Discussion
+Fr 1:25PM - 2:15PM
+Bill and Melinda Gates Hll G01
+Lorenzo Alvisi
+08/22/2017 - 12/01/2017
+CS 5650 - Virtual and Augmented Reality
+Status	Units	Grading	Grade	Deadlines
+Dropped
+3.00
+Graded
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+18546
+030
+Lecture
+MoWe 9:30AM - 10:45AM
+Bloomberg Center B61
+Shiri Azenkot
+08/22/2017 - 12/01/2017
+CS 5740 - Natural Language Processing
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+4.00
+Graded
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+12783
+001
+Lecture
+TuTh 1:25PM - 2:40PM
+Kimball Hall B11
+Claire T. Cardie
+08/22/2017 - 12/01/2017
+CS 5750 - Foundations of Robotics
+Status	Units	Grading	Grade	Deadlines
+Dropped
+4.00
+Graded
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+13119
+001
+Lecture
+MoWeFr 3:35PM - 4:25PM
+Bill and Melinda Gates Hll G01
+Ross A Knepper
+08/22/2017 - 12/01/2017
+CS 5786 - Machine Learning Data Science
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+4.00
+Graded
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+12978
+001
+Lecture
+TuTh 11:40AM - 12:55PM
+Klarman Hall KG70
+Karthik Sridharan
+08/22/2017 - 12/01/2017
+CS 6410 - Advanced Systems
+Status	Units	Grading	Grade	Deadlines
+Dropped
+4.00
+Graded
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+11039
+001
+Lecture
+TuTh 10:10AM - 11:25AM
+Bill and Melinda Gates Hll 114
+Hakim Weatherspoon
+08/22/2017 - 12/01/2017
+CS 7090 - Computer Science Colloquium
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+1.00
+Satisfactory - Unsatisfactory Exclusively
+ 
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+11040
+001
+Lecture
+Th 4:15PM - 5:15PM
+Bill and Melinda Gates Hll G01
+Staff
+08/22/2017 - 12/01/2017
+Printer Friendly Page
+Go to top iconGo to top
