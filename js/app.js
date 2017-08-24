@@ -5,12 +5,24 @@
 // directory.
 requirejs.config({
   baseUrl: 'js/lib',
-  paths: {
-    app: '../app',
-    jQuery:'jquery-3.0.0.min',
-  }
+  shim : {
+    'Popper': {
+          exports: "Popper.default"
+        },
+    "Bootstrap" : { "deps" :['jquery', 'Popper'] },
+    },
+
+    paths: {
+      app: '../app',
+      "jquery" : "https://code.jquery.com/jquery-3.2.1.slim.min",
+      "Popper"  :   "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min",
+      "Bootstrap" :  "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min",
+
+    }
 });
 
 // Start loading the main app file. Put all of
 // your application logic in there.
-requirejs(['app/main']);
+requirejs(['Popper','app/main'],function(Popper){
+  window.Popper = Popper;
+});

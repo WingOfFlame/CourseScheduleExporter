@@ -5,14 +5,35 @@
 <meta charset="UTF-8">
 <script data-main="js/app" src="js/lib/require.js"></script>
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
 <body>
+  <div class="container-fluid my-5">
+    <div class="row">
+        <div class="col">
+          <h3>How to use:</h3>
+          <ol>
+          <li>Log into your student information system (Quest, Student Center or some other names)</li>
+          <li>Go to "Academics -> Enroll -> My Class Schedule", and select the desired term</li>
+          <li>Make sure the display is in "List View". Copy the whole page by pressing Ctrl+A and then Ctrl+C</li>
+          <li>Paste everything into the text field by pressing Ctrl+V</li>
+          <li>Click "Generate"</li>
+          <li>Use the iCalendar file to import your schedule into any calendar software</li>
+        </ol>
+        </div>
+        <div class="col text-center">
+          <textarea id="myInput" class="form-control w-75 h-75 mx-auto mt-5" placeholder="Please paste in your schedules"></textarea>
+          <div class="mt-3">
+            <button id="generateButton" type="button" class="btn btn-primary text-center">
+          Generate
+          </button>
+          </div>
 
-<textarea id="myInput" class="input-area" placeholder="Please paste in your schedules"></textarea>
-<button id="generateButton" type="button">
-Generate
-</button>
+        </div>
+  </div>
+  </div>
+
 
 </body>
 </html>
