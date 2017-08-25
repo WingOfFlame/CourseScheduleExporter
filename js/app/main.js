@@ -6,8 +6,8 @@ require(["require","jquery", "Bootstrap",'app/scheduleParser','app/calendarExpor
 
   document.getElementById('generateButton').onclick = function() {
     var input = document.getElementById('myInput').value;
-    var data = schedulerParser.parseSchedule(input);
-    console.log(data)
+    var datetype = document.getElementById('dateFormat').value;
+    var data = schedulerParser.parseSchedule(input,datetype);
     if(data.length>0){
       var ical = calendarExporter.generate(data);
       calendarExporter.download(ical);

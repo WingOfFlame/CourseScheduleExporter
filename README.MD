@@ -8,6 +8,7 @@ Currently works for Quest(University of Waterloo) and Student Center(Cornell Uni
 - Go to "Academics -> Enroll -> My Class Schedule", and select the desired term
 - Make sure the display is in "List View". Copy the whole page by pressing Ctrl+A and then Ctrl+C
 - Paste everything into the text field by pressing Ctrl+V
+- **Select the correct date format**
 - Click "Generate"
 - Use the iCalendar file to import your schedule into any calendar software
 

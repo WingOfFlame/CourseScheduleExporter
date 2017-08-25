@@ -2,7 +2,7 @@ define(function(require) {
 
   var _util = require('util');
 
-  var parseSchedule = function(input) {
+  var parseSchedule = function(input, datetype) {
 
     var extractData = function(input) {
       /*  States:
@@ -26,12 +26,6 @@ define(function(require) {
               var level = termMatch[3];
               var school = termMatch[4];
               state = 2;
-              console.log({
-                term: term,
-                year: year,
-                level: level,
-                school: school
-              })
             }
           } else if (state == 2) { // finding course title
             // Regexes modified from:
@@ -64,7 +58,7 @@ define(function(require) {
             var timeRaw = lines[++i];
             var location = lines[++i].replace(/\s+/g, ' ');
             var instructor = lines[++i];
-            while(instructor.endsWith(', ')){
+            while (instructor.endsWith(', ')) {
               instructor = instructor.concat(lines[++i]);
             }
             var dateRaw = lines[++i];
@@ -89,14 +83,15 @@ define(function(require) {
       return courses;
     }
 
-    var processData = function(data) {
+    var processData = function(data, datetype) {
+
       for (var i = 0; i < data.length; i++) {
         var course = data[i];
         var components = course.components;
         for (var j = 0; j < components.length; j++) {
           var comp = components[j];
 
-          var daysMatch = comp.timeRaw.match(_util.daysOfWeekReg).slice(1,);
+          var daysMatch = comp.timeRaw.match(_util.daysOfWeekReg).slice(1, );
           var daysOfWeek = []
           for (index in daysMatch) {
             if (daysMatch[index] && _util.dayMap[index]) {
@@ -108,29 +103,61 @@ define(function(require) {
           var timeFrom = _util.convertTo24Hour(timeMatch[1]);
           var timeTo = _util.convertTo24Hour(timeMatch[2]);
 
-          // Assumes DD/MM/YYYY
+          /*
+          convert date to: YYYY/MM/DD
+          */
           var dateMatch = comp.dateRaw.match(_util.rangeReg);
           var dateFrom = dateMatch[1].split('/');
           var dateTo = dateMatch[2].split('/');
+          switch (datetype) {
+            case "1": // DD/MM/YYYY
+              dateFrom = [dateFrom[2], dateFrom[1], dateFrom[0]];
+              dateTo = [dateTo[2], dateTo[1], dateTo[0]];
+              break;
+            case "2":// MM/DD/YYYY
+              dateFrom = [dateFrom[2], dateFrom[0], dateFrom[1]];
+              dateTo = [dateTo[2], dateTo[0], dateTo[1]];
+              break;
+            case "3": // MM/YYYY/DD
+              dateFrom = [dateFrom[1], dateFrom[0], dateFrom[2]];
+              dateTo = [dateTo[1], dateTo[0], dateTo[2]];
+              break;
+            case "4": // DD/YYYY/MM
+              dateFrom = [dateFrom[1], dateFrom[2], dateFrom[0]];
+              dateTo = [dateTo[1], dateTo[2], dateTo[0]];
+              break;
+            case "5": // YYYY/MM/DD
+              dateFrom = [dateFrom[0], dateFrom[1], dateFrom[1]];
+              dateTo = [dateTo[0], dateTo[1], dateTo[1]];
+              break;
+            case "6": // YYYY/DD/MM
+              dateFrom = [dateFrom[0], dateFrom[2], dateFrom[1]];
+              dateTo = [dateTo[0], dateTo[2], dateTo[1]];
+              break;
+            default: // Assumes MM/DD/YYYY
+              dateFrom = [dateFrom[2], dateFrom[0], dateFrom[1]];
+              dateTo = [dateTo[2], dateTo[0], dateTo[1]];
+          }
 
           // Adjust starting date
           var start = new Date(dateFrom)
-          var diff = 0;
+          var diff = 7;
           for (index in daysMatch) {
-            if (daysMatch[index]){
-              var diff = index - start.getDay();
-              if(diff<0){
-                diff+=7;
+            if (daysMatch[index]) {
+              var diff = Math.min(diff,index - start.getDay());
+              if (diff < 0) {
+                diff += 7;
               }
-              break;
             }
           }
-          dateFrom[1] = parseInt(dateFrom[1])+diff
+          dateFrom[2] = parseInt(dateFrom[2]) + diff
+          // pad to make 2 digit
+          dateFrom[2] = dateFrom[2] > 9 ? "" + dateFrom[2]: "0" + dateFrom[2];
 
           // iCal fields
-          comp.DTSTART = dateFrom[2] + dateFrom[0] + dateFrom[1] + 'T' + timeFrom.hour + timeFrom.minute + '00';
-          comp.DTEND = dateFrom[2] + dateFrom[0] + dateFrom[1] + 'T' + timeTo.hour + timeTo.minute + '00';
-          var DUNTIL = dateTo[2] + dateTo[0] + dateTo[1] + 'T' + timeTo.hour + timeTo.minute + '00';
+          comp.DTSTART = dateFrom[0] + dateFrom[1] + dateFrom[2] + 'T' + timeFrom.hour + timeFrom.minute + '00';
+          comp.DTEND = dateFrom[0] + dateFrom[1] + dateFrom[2] + 'T' + timeTo.hour + timeTo.minute + '00';
+          var DUNTIL = dateTo[0] + dateTo[1] + dateTo[2] + 'T' + timeTo.hour + timeTo.minute + '00';
           comp.RRULE = "FREQ=WEEKLY;UNTIL=" + DUNTIL + ";WKST=SU;BYDAY=" + daysOfWeek.join();
           comp.LOCATION = comp.location;
           comp.SUMMARY = course.code + ' ' + comp.type + ' in ' + comp.location;
@@ -144,9 +171,8 @@ define(function(require) {
 
     // Fetch courses
     var data = extractData(input);
-    var courses = processData(data);
+    var courses = processData(data, datetype);
 
-    console.log(courses);
     return courses;
   }
   return {

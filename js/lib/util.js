@@ -18,8 +18,8 @@ define(function(require) {
       hh = 0;
     }
     return {
-      hour: hh,
-      minute: mm
+      hour: hh > 9 ? "" + hh: "0" + hh,
+      minute: mm > 9 ? "" + mm: "0" + mm
     }
   }
 
