@@ -137,8 +137,8 @@ define(function(require) {
               dateTo = [dateTo[1], dateTo[2], dateTo[0]];
               break;
             case "5": // YYYY/MM/DD
-              dateFrom = [dateFrom[0], dateFrom[1], dateFrom[1]];
-              dateTo = [dateTo[0], dateTo[1], dateTo[1]];
+              dateFrom = [dateFrom[0], dateFrom[1], dateFrom[2]];
+              dateTo = [dateTo[0], dateTo[1], dateTo[2]];
               break;
             case "6": // YYYY/DD/MM
               dateFrom = [dateFrom[0], dateFrom[2], dateFrom[1]];
