@@ -58,12 +58,11 @@ define(function(require) {
             var timeRaw = lines[++i];
             var location = lines[++i].replace(/\s+/g, ' ');
             var instructor = lines[++i];
-            while (instructor.endsWith(', ')) {
+            while (instructor.endsWith(', ') || instructor.endsWith(',')) { // instructor more than one line
               instructor = instructor.concat(lines[++i]);
             }
             var dateRaw = lines[++i];
-            var val = courses[courses.length - 1];
-            val.components.push({
+            var entry = {
               classNbr: classNbr,
               section: section,
               type: type,
@@ -71,7 +70,17 @@ define(function(require) {
               location: location,
               instructor: instructor,
               dateRaw: dateRaw
-            })
+            };
+            var valid = true;
+            for (var key in entry) {
+              if ("" == entry[key] || " " == entry[key] ) {//How about TBA?
+                valid = false;
+                break;
+              }
+            }
+            if(valid){
+              courses[courses.length - 1].components.push(entry)
+            }
             //Peek next line to see if we have all components for this course
             var nl = lines[i + 1];
             if (!nl.match(/^\d{4,}$/)) {
@@ -91,7 +100,8 @@ define(function(require) {
         for (var j = 0; j < components.length; j++) {
           var comp = components[j];
 
-          var daysMatch = comp.timeRaw.match(_util.daysOfWeekReg).slice(1, );
+          var daysMatch = comp.timeRaw.match(_util.daysOfWeekReg)
+          daysMatch = daysMatch.slice(1, );
           var daysOfWeek = []
           for (index in daysMatch) {
             if (daysMatch[index] && _util.dayMap[index]) {

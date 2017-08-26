@@ -8,7 +8,7 @@ define(function(require) {
   var dayMap = {0:"SU",1:'MO',2:"TU",3:"WE",4:"TH",5:"FR",6:"SA"};
 
   var convertTo24Hour = function(time12Hour) {
-    var timeMatch = time12Hour.match(/(\d{1,2}):(\d{2})(AM|am|PM|pm)/);
+    var timeMatch = time12Hour.match(/(\d{1,2}):(\d{2})(AM|am|PM|pm)?/);
     var hh = parseInt(timeMatch[1]);
     var mm = parseInt(timeMatch[2]);
     var apm = timeMatch[3];

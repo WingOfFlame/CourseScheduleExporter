@@ -1,0 +1,223 @@
+Search
+Plan
+Enroll
+My Academics
+ 	My Class Schedule	 	 	|	 	 	Add	 	 	|	 	 	Drop	 	 	|	 	 	Swap	 	 	|	 	 	Edit	 	 	|	 	 	Term Information
+My Class Schedule
+List View
+Weekly Calendar View
+Select Display Option
+L
+Fall 2017 | Undergraduate | Cornell University
+Group Box
+Collapse section Class Schedule Filter Options Class Schedule Filter Options
+Show Enrolled Classes
+Show Dropped Classes
+Show Waitlisted Classes
+Filter
+ASIAN 2211 - Introduction to Japan
+Status	Units	Grading	Grade	Requirement Designation	Deadlines
+Enrolled
+3.00
+Graded
+
+Geographic & HistoricalBreadth (Taken)
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+8322
+001
+Lecture
+MoWe 12:20 - 13:10
+Goldwin Smith Hall G64-Kau Aud
+Daniel J. Mckee
+2017/08/22 - 2017/12/01
+8324
+202
+Discussion
+We 13:25 - 14:15
+Sibley Hall 211
+Daniel J. Mckee
+2017/08/22 - 2017/12/01
+CS 4320 - Intro to Database Systems
+Status	Units	Grading	Grade	Deadlines
+Dropped
+3.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+11349
+001
+Lecture
+MoWeFr 14:30 - 15:20
+Olin Hall 155
+Immanuel Trummer
+2017/08/22 - 2017/12/01
+CS 4321 - Practicum in Database Systems
+Status	Units	Grading	Grade	Deadlines
+Dropped
+2.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+12486
+001
+Lecture
+We 15:35 - 16:25
+Hollister Hall B14
+Immanuel Trummer
+2017/08/22 - 2017/12/01
+CS 4410 - Operating Systems
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+3.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+11634
+001
+Lecture
+TuTh 14:55 - 16:10
+Uris Hall G01
+Anne Weinberger Bracy,
+Emin G. Sirer
+2017/08/22 - 2017/12/01
+CS 4700 - Foundations of Artif Inllgnce
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+3.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+11012
+001
+Lecture
+MoWe 19:30 - 20:45
+Olin Hall 155
+Bart Selman
+2017/08/22 - 2017/12/01
+CS 4701 - Prac in A I
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+2.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+11016
+001
+Lecture
+
+TBA
+Bart Selman
+2017/08/22 - 2017/12/01
+CS 4786 - Machine Learning Data Science
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+4.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+12976
+001
+Lecture
+TuTh 11:40 - 12:55
+Klarman Hall KG70
+Karthik Sridharan
+2017/08/22 - 2017/12/01
+LING 1100 - FWS: Lang, Thought & Reality
+Status	Units	Grading	Grade	Requirement Designation	Deadlines
+Enrolled
+3.00
+Graded
+
+First Year Writing Seminar (Not Taken)
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+17597
+102
+Seminar
+TuTh 10:10 - 11:25
+Morrill Hall 102
+Robin Park Karlin
+2017/08/22 - 2017/12/01
+MUSIC 1100 - Elements Of Musical Notation
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+1.00
+Satisfactory - Unsatisfactory Exclusively
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+15545
+001
+Lecture
+MoWeFr 08:00 - 08:50
+Lincoln Hall 124
+Andrew Zhou
+2017/08/28 - 2017/09/22
+MUSIC 1101 - Elements of Music
+Status	Units	Grading	Grade	Deadlines
+Enrolled
+3.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+8945
+202
+Discussion
+Fr 12:20 - 13:10
+Lincoln Hall B21
+Staff
+2017/08/22 - 2017/12/01
+8912
+001
+Lecture
+MoWe 11:15 - 12:05
+Lincoln Hall B20
+Steven F. Pond
+2017/08/22 - 2017/12/01
+MUSIC 1101 - Elements of Music
+Status	Units	Grading	Grade	Deadlines
+Dropped
+3.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+9169
+205
+Discussion
+Fr 11:15 - 12:05
+Lincoln Hall 149
+Steven F. Pond
+2017/08/22 - 2017/12/01
+MUSIC 1421 - Intro to Computer Music
+Status	Units	Grading	Grade	Deadlines
+Dropped
+3.00
+Graded
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+16074
+201
+Discussion
+Th 10:10 - 11:25
+Lincoln Hall B27
+Staff
+2017/08/22 - 2017/12/01
+16073
+001
+Lecture
+Tu 14:55 - 16:10
+Lincoln Hall B20
+Kevin M. Ernste
+2017/08/22 - 2017/12/01
+Printer Friendly Page
+Go to top iconGo to top
