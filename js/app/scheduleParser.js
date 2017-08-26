@@ -101,7 +101,11 @@ define(function(require) {
           var comp = components[j];
 
           var daysMatch = comp.timeRaw.match(_util.daysOfWeekReg)
-          daysMatch = daysMatch.slice(1, );
+          var timeMatch = daysMatch[8].match(_util.rangeReg);
+          var timeFrom = _util.convertTo24Hour(timeMatch[1]);
+          var timeTo = _util.convertTo24Hour(timeMatch[2]);
+
+          daysMatch = daysMatch.slice(1,7);
           var daysOfWeek = []
           for (index in daysMatch) {
             if (daysMatch[index] && _util.dayMap[index]) {
@@ -109,9 +113,7 @@ define(function(require) {
             }
           }
 
-          var timeMatch = daysMatch[7].match(_util.rangeReg);
-          var timeFrom = _util.convertTo24Hour(timeMatch[1]);
-          var timeTo = _util.convertTo24Hour(timeMatch[2]);
+
 
           /*
           convert date to: YYYY/MM/DD

@@ -1,0 +1,128 @@
+Search
+
+Plan
+
+GPAS Planner (GRAD Only)
+
+Enroll
+
+My Academics
+
+
+
+
+my class schedule
+
+add
+
+drop
+
+swap
+
+edit
+
+term information
+
+
+My Class Schedule
+List View
+Weekly Calendar View
+Select Display Option
+Fall 2017 | Graduate | Twin Cities/Rochester
+Collapse section Class Schedule Filter Options Class Schedule Filter Options
+filter
+Show Enrolled Classes
+Show Dropped Classes
+Show Waitlisted Classes
+CSCI 4041 - Algs. & Data Str.
+Status	Units	Grading	Grade	Repeat Code	Deadlines
+Dropped
+4.00
+A-F Grade Basis
+
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+23951
+010
+Lecture
+Mo 6:30PM - 9:00PM
+Tate Hall 101
+James Parker
+09/05/2017 - 12/13/2017
+34498
+013
+Discussion
+Th 6:50PM - 7:40PM
+Keller Hall 2-260
+James Parker
+09/05/2017 - 12/13/2017
+CSCI 4131 - Internet Programming
+Status	Units	Grading	Grade	Repeat Code	Deadlines
+Enrolled
+3.00
+A-F Grade Basis
+
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+23654
+001
+Lecture
+MoWe 1:00PM - 2:15PM
+Fraser Hall 101
+Daniel Challou
+09/05/2017 - 12/13/2017
+CSCI 5715 - Spatial Computing
+Status	Units	Grading	Grade	Repeat Code	Deadlines
+Enrolled
+3.00
+A-F Grade Basis
+
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+23973
+001
+Lecture
+TuTh 9:45AM - 11:00AM
+Keller Hall 3-111
+Shashi Shekhar
+09/05/2017 - 12/13/2017
+GEOG 5562 - GIS Development Practicum
+Status	Units	Grading	Grade	Repeat Code	Deadlines
+Enrolled
+3.00
+A-F Grade Basis
+
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+16963
+001
+Lecture
+Th 4:00PM - 5:50PM
+Social Sciences Building 360
+Mark Lindberg
+09/05/2017 - 12/13/2017
+GIS 8501 - GIS Project Management
+Status	Units	Grading	Grade	Repeat Code	Deadlines
+Enrolled
+3.00
+A-F Grade Basis
+
+
+Academic Calendar Deadlines
+Class Nbr	Section	Component	Days & Times	Room	Instructor	Start/End Date
+15035
+001
+Lecture
+Mo 5:30PM - 7:30PM
+Blegen Hall 445
+Len Kne,
+Susanna McMaster
+09/05/2017 - 12/13/2017
+Printer Friendly Page
+ 	Search	 	 	 	Plan	 	 	 	GPAS Planner (GRAD Only)	 	 	 	Enroll	 	 	 	My Academics
+ 	my class schedule	 	 	 	add	 	 	 	drop	 	 	 	swap	 	 	 	edit	 	 	 	term information
+GO!
